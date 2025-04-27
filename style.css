@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center;     /* Centrar verticalmente */
+    min-height: 100vh;       /* Asegurar altura mínima para centrado vertical */
+    margin: 0;
+    background-color: #333; /* Un fondo oscuro para que resalte el juego */
+    overflow: hidden; /* Evitar barras de scroll si el canvas es grande */
+}
+
+canvas {
+    border: 3px solid #111; /* Borde oscuro para el canvas */
+    display: block;
+    /* El tamaño del canvas se define en el HTML (width/height) */
+    /* No necesita position: absolute ni width/height: 100% */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra para efecto ventana */
+}
